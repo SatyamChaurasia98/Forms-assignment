@@ -27,6 +27,7 @@ const Input = (props)=>{
         case ('select'):
             inputElement = (<select 
             className={inputClasses.join(" ")} value={props.value} onChange={props.changed} multiple={props.multiple} onBlur = {props.blur}>
+                <option value="" disabled>Select an option</option>
                 {props.elementconfig.options.map((optionElement,index)=>{
                     return(
                     <option key= {index} value={optionElement.value}>

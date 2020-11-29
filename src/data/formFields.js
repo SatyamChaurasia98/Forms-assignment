@@ -90,12 +90,27 @@ export const sampleForm={
         label:'Select City',
         elementType:'select',
         elementConfig:{
-            options:[{value:"Select One",displayValue:"Select One",disabled:true},
+            options:[
             {value:'Panipat', displayValue:'Panipat'},
             {value:'Karnal', displayValue:'Karnal'},
             {value:'Sonipat', displayValue:'Sonipat'}]
         },
         value:'',
+        validation:{
+            required:true,
+            valid:true
+        }
+    },
+    location:{
+        label:'Select Loction',
+        elementType:'select',
+        elementConfig:{
+            options:[
+            {value:'Panipat', displayValue:'Panipat'},
+            {value:'Karnal', displayValue:'Karnal'},
+            {value:'Sonipat', displayValue:'Sonipat'}]
+        },
+        value:[],
         validation:{
             required:true,
             valid:true

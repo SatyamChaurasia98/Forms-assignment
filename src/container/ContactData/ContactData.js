@@ -24,14 +24,28 @@ class ContactData extends Component {
             }
             updatedElement.isChecked = !updatedElement.isChecked
         }
-        updatedElement.value = event.target.value
+        if (inputIdentifier ==="location"){
+            console.log(event.target.value)
+            const newLocation = [...updatedElement.value]
+            newLocation.push(event.target.value)
+            updatedElement.value = newLocation
+            console.log(updatedElement.value)
+        }
+        else{
+            console.log('Data')
+            updatedElement.value = event.target.value
+        }
         updatedElement.validation.valid = checkValidity(event.target.value,updatedElement.validation)
         updatedElement.touched = true
         updatedForm[inputIdentifier] = updatedElement
         this.setState({sampleForm:updatedForm})
     }
 
-    inputBlurHandler = (event)=>{
+    inputBlurHandler = (event,inputIdentifier)=>{
+        console.log(this.state.sampleForm[inputIdentifier])
+        if (inputIdentifier==='location'){
+            console.log(this.state.sampleForm[inputIdentifier].value)
+        }
         console.log(event.target.value)
     }
 
@@ -54,8 +68,9 @@ class ContactData extends Component {
                             inValid = {!formElement.config.validation.valid}
                             touched = {formElement.config.touched}
                             changed = {(event)=>this.inputChangedHandler(event,formElement.id)} 
-                            blur = {(event)=>this.inputBlurHandler(event)}
+                            blur = {(event)=>this.inputBlurHandler(event,formElement.id)}
                             display={formElement.config.display}
+                            multiple= {formElement.config.multiple}
                             />
                         )
                     })}
