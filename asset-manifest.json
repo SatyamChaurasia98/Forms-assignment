@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Forms-assignment/static/css/main.2bf787f8.chunk.css",
+    "main.js": "/Forms-assignment/static/js/main.1cb5cacb.chunk.js",
+    "main.js.map": "/Forms-assignment/static/js/main.1cb5cacb.chunk.js.map",
+    "runtime-main.js": "/Forms-assignment/static/js/runtime-main.87f117e0.js",
+    "runtime-main.js.map": "/Forms-assignment/static/js/runtime-main.87f117e0.js.map",
+    "static/js/2.d5ce56fb.chunk.js": "/Forms-assignment/static/js/2.d5ce56fb.chunk.js",
+    "static/js/2.d5ce56fb.chunk.js.map": "/Forms-assignment/static/js/2.d5ce56fb.chunk.js.map",
+    "index.html": "/Forms-assignment/index.html",
+    "precache-manifest.e6eb577ac0e3f08cb09af962e2f46a62.js": "/Forms-assignment/precache-manifest.e6eb577ac0e3f08cb09af962e2f46a62.js",
+    "service-worker.js": "/Forms-assignment/service-worker.js",
+    "static/css/main.2bf787f8.chunk.css.map": "/Forms-assignment/static/css/main.2bf787f8.chunk.css.map",
+    "static/js/2.d5ce56fb.chunk.js.LICENSE.txt": "/Forms-assignment/static/js/2.d5ce56fb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87f117e0.js",
+    "static/js/2.d5ce56fb.chunk.js",
+    "static/css/main.2bf787f8.chunk.css",
+    "static/js/main.1cb5cacb.chunk.js"
+  ]
+}
