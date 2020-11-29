@@ -101,6 +101,21 @@ export const sampleForm={
             valid:true
         }
     },
+    city1:{
+        label:'Select Place',
+        elementType:'select',
+        elementConfig:{
+            options:[
+            {value:'Hisar', displayValue:'Hisar'},
+            {value:'Gurugram', displayValue:'Gurugram'},
+            {value:'Shimla', displayValue:'Shimla'}]
+        },
+        value:'',
+        validation:{
+            required:true,
+            valid:true
+        }
+    },
     location:{
         label:'Select Loction',
         elementType:'select',
